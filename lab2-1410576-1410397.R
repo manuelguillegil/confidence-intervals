@@ -1,6 +1,6 @@
-# Laboratorio 2 Estadística
+# Laboratorio 2 EstadÃ­stica
 
-# Leonardo López 14-10576
+# Leonardo LÃ³pez 14-10576
 # Manuel Gil 14-10397
 
 x1 <- c(15, 16, 14, 15, 17, 18, 19, 15)
@@ -11,9 +11,9 @@ summary(x2)
 
 boxplot(x1,x2, names=c("Metodo 1","Metodo2"))
 
-# En los diagrama de caja se puede observar que el método 1
-# tiene resultados muy superiores al método 2, teniendo su
-# mínimo por encima del máximo del método 2 y su mediana
+# En los diagrama de caja se puede observar que el mÃ©todo 1
+# tiene resultados muy superiores al mÃ©todo 2, teniendo su
+# mÃ­nimo por encima del mÃ¡ximo del mÃ©todo 2 y su mediana
 # casi 6 unidades por encima.
 
 t.test( x1, x2, conf.level = 0.95, var.equal = TRUE)$conf.int
@@ -22,15 +22,15 @@ t.test( x1, x2, conf.level = 0.95, var.equal = TRUE)$conf.int
 # El intervalo de confianza del 95% para la diferencia de las medias es
 # (3.286326, 6.713674)
 # Como el intervalo no incluye al 0, es probable que las medias de ambos
-# métodos no sean iguales. Que el intervalo sea positivo indica que la
-# media del método 1 es mayor, lo cual concuerda con lo observado en el
-# análisis descriptivo.
+# mÃ©todos no sean iguales. Que el intervalo sea positivo indica que la
+# media del mÃ©todo 1 es mayor, lo cual concuerda con lo observado en el
+# anÃ¡lisis descriptivo.
 
 sd(x1)
 sd(x2)
 
-# La diferencia entre las medias es muy pequeña por lo cual podríamos
-# considerarlas estadísticamente iguales.
+# La diferencia entre las medias es muy pequeÃ±a por lo cual podrÃ­amos
+# considerarlas estadÃ­sticamente iguales.
 # De hecho, el intervalo de confianza que se obtiene asumiendo que las
 # varianzas son iguales es casi igual al que se obtiene asumiendo que
 # no lo son
